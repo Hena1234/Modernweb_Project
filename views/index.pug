@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    if user
+        h3 Welcome back #{user.name}!
+    h1 Movie
+    //- Loop through all books
+    each movie in movies 
+        //- Display title, author, pages, rating
+        label Title:
+        //- Link to book with id
+        a(href="/movie/" + movie._id) #{movie.name}
+        
+        p Year: #{movie.year}
+        p Rating: #{movie.rating}
+        p Description: #{movie.description}
+
+        p Genres:
+        ul
+        //- Loop through genres and print as list
+        each genre in movie.genres
+            li #{genre}
+
+        br
+        br

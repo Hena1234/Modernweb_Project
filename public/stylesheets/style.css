@@ -1,0 +1,39 @@
+body {
+  padding: 50px;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: rgb(243, 210, 210);
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(251, 255, 255);
+}
+a {
+  padding: 15px;
+  text-align: center;
+
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  background-color: rgb(223, 135, 135);
+}
+label {
+  color: #584e47;
+  font-weight: bold;
+  display: block;
+}
+input {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+input.btn.btn-primary {
+  padding: 10px;
+  border: 2px solid rgb(252, 252, 252);
+  background-color: #ad22e444;
+  border-radius: 5px;
+  font: inherit;
+}
